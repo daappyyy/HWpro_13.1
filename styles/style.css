@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Montserrat';
+    background-color: #323264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: none;
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    color: black;
+}
+input:focus{
+    outline: 1px solid #24A3FF;
+}
+
+input::placeholder{
+    color: #B3B3BA;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.form-container {
+    width: 650px;
+    background-color: #F5F5FA;
+    padding: 30px;
+    border-radius: 12px;
+}
+.form {
+}
+.form-title {
+    font-weight: 700;
+    font-size: 38px;
+    background: linear-gradient(298deg, #f0145a 0%, #ef8080 100%);
+    color: transparent;
+    background-clip: text; 
+    margin-bottom: 30px;
+}
+.form-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.message {
+    max-width: 590px;
+    height: 130px;
+    border: none;
+    resize: none;
+    padding: 15px;
+    color: black;
+    border-radius: 8px;
+}
+.message::placeholder{
+    color: #B3B3BA;
+}
+
+.message:focus{
+    outline: 1px solid #24A3FF;
+}
+.form-text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    margin-bottom: 15px;
+}
+.form-contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.send-message-btn {
+    border-radius: 12px;
+    padding: 18px 30px;
+    background-color: #24A3FF;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.send-message-btn:hover{
+    background-color: #0085FF;
+}
+.send-message-btn:active{
+    background-color: #006CCF;
+}
+/* ---------------------------------------- */
+.hidden{
+    display: none;
+}
+.error{
+    color: #FF0000;
+    margin-top: -8px;
+    font-size: 13px;
+}
+.invalid{
+    border: 1px solid #FF0000;
+}
+.invalid::placeholder{
+    color: #FF0000;
+}
